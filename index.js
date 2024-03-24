@@ -28,22 +28,18 @@ function checkDate(date) {
 	var work = false;
 	for (let i = 0; i < dates.length; i++) {
 		var j = addDays(dates[i], 7);
-    if (date.getTime() <= j.getTime()) {
-    	console.log("j");
-    }
-    if (date.getTime() >= dates[i].getTime()) {
-    	console.log("i");
-    }
   	if (date.getTime() <= j.getTime() && date.getTime() >= dates[i].getTime()) {
       work = true;
   	}
   }
   if (work) {
-  	answerElement.append("<div> yes work on " + formatDate(date) + "</div>");
+  	answerElement.append("yes work on " + formatDate(date));
   }
   else {
   	answerElement.append("<div> no work on " + formatDate(date) + "</div>");
   }
+  var linebreak = document.createElement("<br>");
+  answerElement.appendChild(linebreak);
 }
 
 var startDate = new Date(2024, 2, 06);
