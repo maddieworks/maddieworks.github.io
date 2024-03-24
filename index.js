@@ -50,7 +50,7 @@ var startDate = new Date(2024, 2, 06);
 var endDate = new Date(2026, 4, 29);
 var interval = 14;
 var dates = recurringDates(startDate, endDate, interval);
-var answerElement = $("#answer");
+var answerElement = document.getElementById('answer');
 var dateCheck = new Date();
 var dateCheckElement = document.getElementById('checkDate'.value);
 
