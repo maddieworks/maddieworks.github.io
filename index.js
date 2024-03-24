@@ -38,7 +38,7 @@ function checkDate(date) {
   else {
   	answerElement.append("<div> no work on " + formatDate(date) + "</div>");
   }
-  var linebreak = document.createElement("<br>");
+  var linebreak = document.createElement("br");
   answerElement.appendChild(linebreak);
 }
 
