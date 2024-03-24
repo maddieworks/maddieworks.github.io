@@ -54,7 +54,7 @@ var answerElement = document.getElementById('answer');
 var dateCheck = new Date();
 var dateCheckElement = document.getElementById('checkDate'.value);
 
-$(document).ready(function() {
+window.onload = (function() {
 	document.getElementById('checkDate').value = formatDate(dateCheck);
   checkDate(dateCheck);
 });
